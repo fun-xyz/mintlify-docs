@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "react-twitter-embed": "^4.0.4",
     "sharp": "^0.33.4"
   }
 }
