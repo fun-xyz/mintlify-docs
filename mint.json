@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Test Kit",
+  "name": "Checkout by Fun.xyz",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -31,7 +31,8 @@
       "pages": [
         "introduction",
         "overview",
-        "deepdive"
+        "deepdive",
+        "compliance"
       ]
     }
   ],
