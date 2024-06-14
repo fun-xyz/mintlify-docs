@@ -12,13 +12,9 @@ Checkout connects liquidity sources to arbitrary on-chain actions at point of pu
 3. Checkout SDK
 
 ## Liquidity Aggregator
-Optimized for maximum access to liquidity.
-
 In the ever-evolving world of web3, ensuring users have seamless access to liquidity across various assets and platforms is crucial. Checkout by Fun.xyz aims to simplify this by offering robust liquidity aggregation capabilities. Here’s how it works:
 
-- **Multi-Chain Fund Access:** Users can pull funds from any token on any EVM chain. This broad compatibility ensures that no matter where the user's assets are held, they can be easily accessed and utilized.
-
-- **Platform Integration:** When integrated into platforms that manage their own liquidity, Checkout can leverage this liquidity effectively. This symbiotic relationship boosts both Checkout's functionality and the partner platform's user experience.
+- **Multi-Chain Token Access:** Users can pull funds from any token on any EVM chain. This broad compatibility ensures that no matter where the user's assets are held, they can be easily accessed and utilized.
 
 - **Centralized Exchange Connectivity:** Checkout can pull funds from centralized exchanges, expanding the pool of available liquidity. Users benefit from the broad asset support these exchanges offer.
 
@@ -42,6 +38,8 @@ At Fun.xyz, our Checkout product includes an advanced routing engine designed to
 - **Request for Quote System:** The routing engine operates as a request for quote system, shifting the responsibility for order completion from technology providers to ourselves or our affiliated market maker. This approach ensures higher reliability and control over the transaction process.
 
 - **Built on Existing Providers:** Our routing engine is constructed on top of existing providers, leveraging their infrastructure to enhance our capabilities. This integration allows us to provide a robust and reliable routing system without reinventing the wheel.
+
+- **Platform Integration:** When integrated into dApps that manage their own liquidity, such as DEXs or yield protocols, Checkout can leverage this liquidity for all transactions on their platform. This symbiotic relationship can drive supplemental volume to the partner's protocol.
 
 - **Intelligent Chain Selection:** When pulling funds from centralized exchanges, Checkout intelligently selects the correct chain. For example, Coinbase holds ETH on Arbitrum, Base, and mainnet, but not zkSync. If a user wants to use ETH from their Coinbase account to purchase HOLD on zkSync, our engine picks the chain with the best routing to zkSync.
 
@@ -71,25 +69,3 @@ The Checkout SDK by Fun.xyz is designed to seamlessly integrate into our custome
 - **Volume Maximization UI:** The SDK's user interface is specifically designed to maximize transaction volume on your website. It is the highest-performing checkout product on the market today. In benchmarks against competitors, including fiat on-ramp solutions, we have observed a 25x increase in volume. These gains are due to expanded token coverage, improved deposit flow, and a broader range of funding options for users.
 
 Checkout by Fun.xyz not only enhances the functionality of your application but also significantly boosts your transaction volume.
-
-
-
-
-
-
-
-
-
-
-## Compliance
-At Fun.xyz, compliance is a cornerstone of our operations. We have meticulously designed our routing engine to function as an entirely non-custodial protocol, maintained and operated by decentralized actors. Here’s how we ensure compliance:
-
-- **Non-Custodial Protocol:** The routing engine is designed as a non-custodial protocol. This means that at no point does Fun.xyz take custody of user funds. Fun.xyz is never in flow of funds. Instead, users maintain control over their assets throughout the entire process.
-
-- **Decentralized Operation:** Our protocol can be maintained and operated by decentralized actors, ensuring that there is no central point of control or failure. This decentralized nature aligns with the principles of web3 and enhances security and compliance.
-
-- **User-Controlled Transactions:** From a compliance perspective, using Fun.xyz is equivalent to a user depositing funds into a non-custodial account and then signing a transaction to execute a transfer on their own volition. This approach ensures that users have complete control over their transactions, adhering to the highest standards of financial compliance.
-
-- **Regulatory Alignment:** By ensuring that all transactions are user-initiated and non-custodial, we align with regulatory requirements and best practices. This setup minimizes the risks associated with custody and centralization, providing users with a secure and compliant platform for their web3 activities.
-
-At Fun.xyz, we are committed to maintaining the highest standards of compliance while providing a seamless and efficient user experience. Our non-custodial routing engine ensures that users can confidently manage their assets within a compliant and secure framework.
