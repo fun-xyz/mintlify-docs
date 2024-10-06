@@ -5,26 +5,26 @@ description: 'Checkout employs novel technical solutions to offer a seamless use
 
 ## How it works
 
-Checkout connects liquidity sources to arbitrary on-chain actions at point of purchase. Checkout is divided into three key parts:
+Checkout connects liquidity sources to arbitrary on-chain actions at the point of purchase. Checkout consists of three essential parts:
 
 1. Liquidity aggregator
 2. Routing engine
 3. Checkout SDK
 
 ## Liquidity Aggregator
-User's hold funds in many forms. Checkout seeks to be a universal payments rail. Here’s how it works:
+Users hold funds in many forms. Checkout seeks to be a universal payment rail, removing the technological barrier between user funds and their desired on-chain action. Here’s how it works:
 
-- **EVM Wallets:** Users can pull funds from any token on any EVM chain.
+- **EVM Wallets:** Users can spend funds from any token on any EVM chain.
 
-- **Solana Wallets:** Users can pull funds from a Solana wallet to execute an action on an EVM chain.
+- **Solana Wallets:** Users can spend funds from a Solana wallet to execute an action on an EVM chain.
 
-- **Deposit Addresses:** Users can send any token on any EVM chain to a static deposit address associated with an arbitrary on-chain action.
+- **Deposit Addresses:** Users can send ERC-20 tokens to a static deposit address associated with an arbitrary on-chain action on any EVM chain.
 
-- **Centralized Exchanges:** Checkout can pull funds from a user's centralized exchange account. A user can permantly link an exchange. Checkout can intelligently pull tokens from the cheapest & fastest chain for their specified action.
+- **Centralized Exchanges:** Users can pay for on-chain actions with their centralized exchange account. If the user desires, these accounts can remain linked to Checkout for convenient future payments. Checkout intelligently suggests users spend tokens with the lowest-cost route for their specified action.
 
-- **Card:** Checkout can pull funds from both debit and credit cards. Checkout can intelligently on-ramp the best intermediary asset in any juristiction, to ensure users have the cheapest path to executing any action, regardless of region.
+- **Card:** Checkout can pull funds from both debit and credit cards. Checkout can intelligently on-ramp the best intermediary asset in any jurisdiction to ensure users have the cheapest route to executing any action, regardless of region.
 
-- **Continuous Expansion:** We are constantly working to add more sources of liquidity. Soon, we will roll out support for additional chains and ecosystems, including Mantle, Blast, Linea, Cosmos, and Starknet.
+- **Continuous Expansion:** We are constantly working to add more liquidity sources. Soon, we will roll out support for additional chains and ecosystems, including Mantle, Blast, Linea, Cosmos, and Starknet.
 
 
 
@@ -36,13 +36,13 @@ Our routing engine makes it easy to execute any on-chain smart contract interact
 
 - **Arbitrary Batched Actions:** With one signature from an EOA, users can execute a batched set of smart contract actions on any destination chain.
 
-- **Optimized Routes and Speed:** Our routing engine is optimized for maximizing available routes and reducing time to finality.
+- **Optimized Routes and Speed:** Our routing engine is optimized to maximize available routes and reduce time to finality.
 
-- **Slippage SLAs:** Our routing engine guaruntees minimum execution prices, and auctions orders who can beat those minimums. This model enables price guauntees for customers.
+- **Slippage SLAs:** Our routing engine guarantees minimum execution prices, and auctions orders that can beat those minimums. This model enables price guarantees for customers.
 
-- **Modular Routing:** When integrated into dApps that manage their own liquidity, such as DEXs or yield protocols, Checkout can leverage this liquidity for all transactions on their platform.
+- **Modular Routing:** When integrated with dApps that custody liquidity, such as AMMs or yield protocols, Checkout can use the dApps liquidity for all transactions on their platform.
 
-- **Transaction Certainty:** Our routing engine ensures complete transaction certainty. If a transaction fails at a certain point, our engine will retry it. For instance, if a transaction involves multiple bridges and fails at one bridge, the user won't receive the wrong token on the wrong chain. Instead, Checkout covers the gas fees and retries the transaction, ensuring the user receives their intended assets without hassle.
+- **Transaction Certainty:** Our routing engine ensures complete transaction certainty. If a transaction fails at a certain point, our engine will retry it. For instance, if a transaction involves multiple bridges and fails at one bridge, the user won't receive the wrong token on the wrong chain. Instead, Checkout covers the gas fees and retries the transaction, ensuring users receive their intended assets without hassle.
 
 
 
@@ -52,16 +52,16 @@ Our routing engine makes it easy to execute any on-chain smart contract interact
 
 
 ## Checkout SDK
-The Checkout SDK by Fun.xyz is designed to seamlessly integrate into our customers' applications. Here’s what makes our Checkout SDK stand out:
+The Checkout SDK by Fun.xyz seamlessly integrates into our customers' applications. Here’s what makes our Checkout SDK stand out:
 
 - **Seamless Integration:** The Checkout SDK is a RainbowKit fork. It requires only ~80 lines of code and is compatible with your existing hooks.
 
-- **Optimized for Conversion:** The SDK has been ruthlessly optimized to maximize conversion rates. Checkout automatically nudges customers towards higher converting payment methods, trasaction amounts, and assets.
+- **Optimized for Conversion:** The SDK is ruthlessly optimized to maximize conversion rates. Checkout automatically nudges customers towards higher-converting payment methods, transaction amounts, and assets.
 
-- **Conditional Display:** The Checkout SDK is value additive only. If the user has the necessary funds to complete their action without Checkout, the SDK remains hidden and the order goes through as normal. This structure ensures Checkout only shows up when it can provide additional value.
+- **Conditional Display:** The Checkout SDK is only value-additive. If the user has the necessary funds to complete their action without Checkout, the SDK remains hidden, and the order processes as usual. This structure ensures Checkout only appears when it can provide additional value.
 
-- **Easy Installation:** Installing the Checkout SDK is straightforward, and our dedicated integration team is there to support you every step of the way. We ensure that the integration process is quick and hassle-free.
+- **Easy Installation:** Installing the Checkout SDK is straightforward, and our dedicated integration team supports you every step of the way. We ensure that the integration process is quick and hassle-free.
 
 - **Smart Accounts:** Checkout can create a smart account for new users during purchase.
 
-Checkout by Fun.xyz not only enhances the functionality of your application but also significantly boosts your transaction volume.
+Checkout by Fun.xyz enhances the functionality of your application and significantly boosts your transaction volume.
