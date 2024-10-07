@@ -14,13 +14,13 @@ Checkout connects liquidity sources to arbitrary on-chain actions at the point o
 ## Liquidity Aggregator
 Users hold funds in many forms. Checkout seeks to be a universal payment rail, removing the technological barrier between user funds and their desired on-chain action. Here’s how it works:
 
-- **EVM Wallets:** Users can spend funds from any token on any EVM chain.
+- **EVM Wallets:** Users can spend any token on any EVM chain.
 
 - **Solana Wallets:** Users can spend funds from a Solana wallet to execute an action on an EVM chain.
 
 - **Deposit Addresses:** Users can send ERC-20 tokens to a static deposit address associated with an arbitrary on-chain action on any EVM chain.
 
-- **Centralized Exchanges:** Users can pay for on-chain actions with their centralized exchange account. If the user desires, these accounts can remain linked to Checkout for convenient future payments. Checkout intelligently suggests users spend tokens with the lowest-cost route for their specified action.
+- **Centralized Exchanges:** Users can pay for on-chain actions with their centralized exchange account. If the user desires, their CEX accounts can remain linked to Checkout as a payment method in the future. Checkout will intelligently route tokens using the cheapest and fastest blockchain the users exchange supports. Even if the user’s exchange does not support the destination chain, Checkout will leverage cross-chain routing to process the transaction efficiently.
 
 - **Card:** Checkout can pull funds from both debit and credit cards. Checkout can intelligently on-ramp the best intermediary asset in any jurisdiction to ensure users have the cheapest route to executing any action, regardless of region.
 
@@ -42,7 +42,7 @@ Our routing engine makes it easy to execute any on-chain smart contract interact
 
 - **Modular Routing:** When integrated with dApps that custody liquidity, such as AMMs or yield protocols, Checkout can use the dApps liquidity for all transactions on their platform.
 
-- **Transaction Certainty:** Our routing engine ensures complete transaction certainty. If a transaction fails at a certain point, our engine will retry it. For instance, if a transaction involves multiple bridges and fails at one bridge, the user won't receive the wrong token on the wrong chain. Instead, Checkout covers the gas fees and retries the transaction, ensuring users receive their intended assets without hassle.
+- **Transaction Certainty:** Our routing engine ensures complete transaction certainty. If a transaction fails at a certain point, our engine will retry it. For instance, if a transaction involves multiple bridges and fails at one bridge, the user won't receive the wrong token on the wrong chain. Instead, Checkout covers the gas fees and retries the transaction, ensuring the user receives their intended assets without hassle.
 
 
 
@@ -56,7 +56,7 @@ The Checkout SDK by Fun.xyz seamlessly integrates into our customers' applicatio
 
 - **Seamless Integration:** The Checkout SDK is a RainbowKit fork. It requires only ~80 lines of code and is compatible with your existing hooks.
 
-- **Optimized for Conversion:** The SDK is ruthlessly optimized to maximize conversion rates. Checkout automatically nudges customers towards higher-converting payment methods, transaction amounts, and assets.
+- **Optimized for Conversion:** The SDK has been iteratively optimized to maximize conversion rates. Checkout automatically nudges customers towards higher-converting payment methods, transaction amounts, and assets.
 
 - **Conditional Display:** The Checkout SDK is only value-additive. If the user has the necessary funds to complete their action without Checkout, the SDK remains hidden, and the order processes as usual. This structure ensures Checkout only appears when it can provide additional value.
 
